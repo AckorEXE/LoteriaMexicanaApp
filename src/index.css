@@ -1,0 +1,108 @@
+:root {
+  /* Colores principales */
+  --bg-color: #f2efe7;
+  --primary-color: #8b004a;
+  --primary-color-hover: #6a0038;
+  --primary-color-rgba: rgba(139, 0, 74, 0.1);
+  --text-color: #1c1c1c;
+  --text-muted: #666666;
+  --card-bg: #ffffff;
+  --card-text: #1c1c1c;
+  --card-border: #8b004a;
+  --shadow-color: rgba(139, 0, 74, 0.08);
+  --shadow-hover: rgba(139, 0, 74, 0.15);
+  
+  /* Fuentes */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  
+  /* Bordes */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --primary-color: #ff3b9a;
+    --primary-color-hover: #ff60ad;
+    --primary-color-rgba: rgba(255, 59, 154, 0.15);
+    --text-color: #f2efe7;
+    --text-muted: #a0a0a0;
+    --card-bg: #1e1e1e;
+    --card-text: #f2efe7;
+    --card-border: #ff3b9a;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-hover: rgba(255, 59, 154, 0.15);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 100%;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Hide scrollbar globally - Forced */
+html, body, #root, * {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}
