@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# 🇲🇽 Lotería Mexicana App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Lleva la tradición de la Lotería Mexicana en tu bolsillo! Esta es una aplicación moderna y rápida desarrollada para dispositivos móviles y web, que recrea la experiencia clásica del juego de mesa más querido de México.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Frontend:** [React.js](https://reactjs.org/) con [TypeScript](https://www.typescriptlang.org/)
+*   **Herramienta de construcción:** [Vite](https://vitejs.dev/)
+*   **Híbrido/Nativo:** [Capacitor](https://capacitorjs.com/) (Android e iOS)
+*   **Estilos:** CSS3 personalizado.
+*   **Iconos:** [Lucide React](https://lucide.dev/)
 
-## React Compiler
+## ✨ Características principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ **Multiplataforma:** Disponible para Web y Android.
+- 🎙️ **Soporte de Voz:** Integración nativa para "cantar" las cartas.
+- 🎨 **Diseño Tradicional:** Interfaz inspirada en la estética clásica.
+- ⚡ **Optimización:** Carga instantánea.
 
-## Expanding the ESLint configuration
+## 🛠️ Instalación y Desarrollo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Si quieres ejecutar este proyecto localmente:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/AckorEXE/LoteriaMexicanaApp.git
+   ```
+   
+2. **Instala las dependencias:**
+   ```bash
+   pnpm install
+   ```
+   
+3. **Ejecuta en modo desarrollo (Web):**
+   ```bash
+   pnpm dev
+   ```
+   
+### 📱 Para Android:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Compila el proyecto web:**
+   ```bash
+   pnpm build
+   ```
+   
+2. **Sincroniza con Android:**
+   ```bash
+   npx cap sync android
+   ```
+   
+3. **Abre en Android Studio:**
+   ```bash
+   npx cap open android
+   ```
+   
+---
+Desarrollado con ❤️ por **AckorEXE**
