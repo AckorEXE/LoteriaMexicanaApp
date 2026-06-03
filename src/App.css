@@ -166,9 +166,11 @@ body {
   font-size: 1.3rem;
   text-transform: uppercase;
   color: var(--text-main);
-  padding: 10px 0;
+  padding: 10px 0 6px;
   border-top: 1.5px solid rgba(0,0,0,0.1);
   background: linear-gradient(90deg, transparent, rgba(0,0,0,0.03), transparent);
+  line-height: 1;
+  margin-bottom: 4px; /* Añadimos un pequeño margen para alejarlo del borde inferior */
 }
 
 .card-back {
@@ -265,7 +267,7 @@ body {
   color: var(--text-main);
   text-align: center;
   width: 100%;
-  padding-top: 2px;
+  padding: 4px 2px; /* Añadimos padding inferior y superior equilibrado */
   border-top: 0.5px solid rgba(0,0,0,0.05);
   overflow: hidden;
   white-space: nowrap;

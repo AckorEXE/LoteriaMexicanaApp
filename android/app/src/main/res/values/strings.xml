@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Loteria Mexicana</string>
+    <string name="title_activity_main">Loteria Mexicana</string>
+    <string name="package_name">com.pedro.loteriamexicana</string>
+    <string name="custom_url_scheme">com.pedro.loteriamexicana</string>
+</resources>
