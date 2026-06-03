@@ -12,7 +12,7 @@
 
 ## ✨ Características principales
 
-- ✅ **Multiplataforma:** Disponible para Web y Android.
+- ✅ **Multiplataforma:** Disponible para Web, Android e iOS.
 - 🎙️ **Soporte de Voz:** Integración nativa para "cantar" las cartas.
 - 🎨 **Diseño Tradicional:** Interfaz inspirada en la estética clásica.
 - ⚡ **Optimización:** Carga instantánea.
@@ -36,7 +36,7 @@ Si quieres ejecutar este proyecto localmente:
    pnpm dev
    ```
    
-### 📱 Para Android:
+### 🤖 Para Android:
 
 1. **Compila el proyecto web:**
    ```bash
@@ -51,6 +51,23 @@ Si quieres ejecutar este proyecto localmente:
 3. **Abre en Android Studio:**
    ```bash
    npx cap open android
+   ```
+
+### 🍎 Para iOS:
+
+1. **Compila el proyecto web:**
+   ```bash
+   pnpm build
+   ```
+   
+2. **Sincroniza con iOS:**
+   ```bash
+   npx cap sync ios
+   ```
+   
+3. **Abre en Xcode (Requiere macOS):**
+   ```bash
+   npx cap open ios
    ```
    
 ---
